@@ -1,0 +1,60 @@
+body {
+  background-color: #717C89;
+}
+
+#navbar {
+  background-color: #ADF6B1;
+}
+
+#about, #articlesPage {
+  background-color: #A1E5AB;
+  height: 120vh;
+  padding-top: 7%;
+}
+
+#content {
+  padding-top: 5%;
+  padding-right: 5%;
+  padding-left: 5%;
+  text-align: left;
+  width: : 70%;
+}
+
+#writing {
+  background-color: #90BAAD;
+  height: 35vh;
+}
+
+#music {
+  background-color: #8AA39B;
+  height: 50vh;
+}
+
+#devices {
+  background-color: #8AA2A9;
+  height: 50vh;
+}
+
+#programming {
+  background-color: #90BAAD;
+  height: 100vh;
+}
+
+#contact {
+  background-color: #A1E5AB;
+
+}
+
+img {
+  width: 50%;
+}
+
+a {
+  color: #60431f;
+}
+
+a:hover {
+  color: white;
+}
+
+}
