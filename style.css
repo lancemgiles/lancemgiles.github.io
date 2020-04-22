@@ -18,7 +18,7 @@ a:hover {
   background-color: #ADF6B1;
 }
 
-#about, #articlesPage {
+#about {
   background-color: #A1E5AB;
   height: 120vh;
   padding-top: 7%;
@@ -60,5 +60,12 @@ a:hover {
 #contact {
   background-color: #A1E5AB;
 
+}
+
+#articlesPage {
+  margin: 1%;
+  background-color: #90BAAD;
+  height: 120vh;
+  padding-top: 7%;
 }
 
