@@ -20,7 +20,6 @@ a:hover {
 
 #about {
   background-color: #A1E5AB;
-  height: 120vh;
   padding-top: 7%;
 }
 
@@ -32,29 +31,24 @@ a:hover {
   width: : 70%;
 }
 
-#writing {
-  background-color: #90BAAD;
-  height: 35vh;
+#bookCover {
+  width: 20%;
 }
 
-#bookCover {
-  height:  20%;
-  width: auto;
+#writing {
+  background-color: #90BAAD;
 }
 
 #music {
   background-color: #8AA39B;
-  height: 50vh;
 }
 
 #devices {
   background-color: #8AA2A9;
-  height: 50vh;
 }
 
 #programming {
   background-color: #90BAAD;
-  height: 100vh;
 }
 
 #contact {
