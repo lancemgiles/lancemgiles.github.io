@@ -63,3 +63,9 @@ a:hover {
   padding-top: 7%;
 }
 
+#videos {
+  margin: 1%;
+  padding-top: 7%;
+  height: 120vh;
+  background-color: #8AA39B;
+}
