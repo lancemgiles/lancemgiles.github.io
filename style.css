@@ -1,5 +1,15 @@
+:root {
+  --text: #192618;
+  --bg: #5b8c57;
+  --nav: #7cbf76;
+  --link: #9df296;
+  --line: #3a5937;
+}
+
+
 body {
-  background-color: #717C89;
+  background-color: var(--bg);
+  color: var(--text);
 }
 
 img {
@@ -7,15 +17,19 @@ img {
 }
 
 a {
-  color: #60431f;
+  color: var(--link);
 }
 
 a:hover {
   color: white;
 }
 
+hr.line {
+  color: var(--line);
+}
+
 #navbar {
-  background-color: #ADF6B1;
+  background-color: var(--nav);
 }
 
 #about {
