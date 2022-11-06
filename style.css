@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
 :root {
   --text: #192618;
   --bg: #5b8c57;
@@ -10,10 +12,15 @@
 body {
   background-color: var(--bg);
   color: var(--text);
+  font-family: 'Lora', serif;
 }
 
 img {
   width: 50%;
+}
+#me {
+  border-radius: 50%;
+  max-width: 25%;
 }
 
 a {
@@ -25,7 +32,7 @@ a:hover {
 }
 
 hr.line {
-  color: var(--line);
+  background-color: var(--line);
 }
 
 #navbar {
@@ -33,7 +40,7 @@ hr.line {
 }
 
 #about {
-  background-color: #A1E5AB;
+  /*background-color: #A1E5AB;*/
   padding-top: 7%;
 }
 
@@ -47,7 +54,7 @@ hr.line {
 
 #bookCover {
   width: 20%;
-}
+/*}
 
 #writing {
   background-color: #90BAAD;
@@ -69,7 +76,7 @@ hr.line {
   background-color: #A1E5AB;
 
 }
-
+*/
 #articlesPage {
   margin: 1%;
   background-color: #90BAAD;
