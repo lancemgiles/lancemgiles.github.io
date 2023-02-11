@@ -1,5 +1,13 @@
+<!--
+TODO:
+add figure and figcaption tags to project thumbnails
+
+-->
+
+
+
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -41,126 +49,136 @@
     </div>
   </nav>
 
-  <div id="about" class="text-center">
-    <h1>Lance Malcolm Giles</h1>
-    <h3>is my name.</h3>
-    <h5>this website is a work in progress</h5>
-    <div id="content" class="row">
-    <div id="statement" class="col-lg-6">
-    	<p>My name is Lance Malcolm Giles and I am an artist.</p>
-    	<br>
-		  <p>I build websites, software and computers, write in various genres, make and record music with guitars and drums, and design and build guitar effect pedals.</p>
+  <section>
+    <div id="about" class="text-center">
+      <h1>Lance Malcolm Giles</h1>
+      <h3>is my name.</h3>
+      <h5>this website is a work in progress</h5>
+      <div id="content" class="row">
+        <div id="statement" class="col-lg-6">
+        	<p>My name is Lance Malcolm Giles and I am an artist.</p>
+        	<br>
+    		  <p>I build websites, software and computers, write in various genres, make and record music with guitars and drums, and design and build guitar effect pedals.</p>
 
-		  <p>These are my creative outlets and my passions.</p>
-		</div>
-  <img class="col-lg-6" id="me" src="https://res.cloudinary.com/dqsbdwzek/image/upload/v1588371045/self-cropped_ha71pb.jpg" alt="This is what I look like.">
-</div>
+    		  <p>These are my creative outlets and my passions.</p>
+    		</div>
+      <img class="col-lg-6" id="me" src="https://res.cloudinary.com/dqsbdwzek/image/upload/v1588371045/self-cropped_ha71pb.jpg" alt="This is what I look like.">
+    </div>
+  </section>
+  <br>
+  <hr class="line">
 
-<br>
-<hr class="line">
-
-<div id="programming">
+  <section class="text-center" id="tech">
     <h2>TECHNOLOGY</h2>
       <h3>Hardware</h3>
-        <p>I have always enjoyed hardware.
-          I've built a desktop computer, carried out some rudimentary laptop upgrades and repairs,
-          built a <a href="https://retropie.org.uk/" target="_blank">RetroPie</a> with a Raspberry Pi,
-          and a large range of analog and digital <a href="https://dogmandevices.com" target="_blank">effect pedals</a>.</p>
-      <p>
-      <p>I find the fact that hardware is tangible quite appealing. As fun and interesting as it is to intangilbe things,
-        it is satisfying to have a physical object which I designed and built.
-      </p>
-    <h3>Software</h3>
-      <p>I initially became interested in software through video games - it seemed like an opportunity to create a world. While this interest still exists,
-        (and I have some familiarity with a few game engines; Unity, Godot, and Love), I have not produced any original games worth mentioning. In my quest to learn about
-        making games, aside from sound-design and pixel art, I learned a good deal about various programming languages,
-        including Lua, Python, JavaScript, CSS, HTML, Java, C, C++ and C#.
-      </p>
-      <p>My work with effect pedals also lead me to working with assembly, particularly the SpinASM language for the Spin Semiconductor FV-1.</p>
-      <p>Most websites I have built from scratch have been projects done for the sake of learning. That includes this portfolio website. Additionally,
-        my guitar pedal website mentioned above was built with Squarespace, and my literary blog mentioned below is built with Wordpress,
-        so I am no stranger to that sort of technology as well.
-      </p>
-<!-- none of the linked projects are interesting or demonstrate a deeper knowledge than this portfolio page - create or link to something which is actually cool
-  <div class="container-fluid text-center">
-	<div class="row" id="programming-links">
-    	<div class="col-lg-6 project-tile">
-      		<a href="https://codepen.io/greze/pen/RJzazr" target="_blank">
-      			<img src="https://res.cloudinary.com/dqsbdwzek/image/upload/v1531408676/tribute_dbfbsj.png" alt="Tribute to Joan of Arc">
-      			<p>Tribute to Joan of Arc</p>
-      		</a>
-    	</div>
-    	<div class="col-lg-6 project-tile">
-      		<a href="https://codepen.io/greze/pen/mKZrdX" target="_blank">
-      			<img src="https://res.cloudinary.com/dqsbdwzek/image/upload/v1531408665/survey_puilqf.png" alt="Terse Philosophical Survey">
-      			<p>Terse Philosophical Survey</p>
-      		</a>
-    	</div>
+        <!--
+          TODO:
+          -add photo of my retropie
+          -add pedal photos
+        -->
+          <p>I have always enjoyed hardware.
+            I've built a desktop computer, carried out some rudimentary laptop upgrades and repairs,
+            built a <a href="https://retropie.org.uk/" target="_blank">RetroPie</a> with a Raspberry Pi,
+            and a large range of analog and digital <a href="https://dogmandevices.com" target="_blank">effect pedals</a>.</p>
+          <p>
+          <p>I find the fact that hardware is tangible quite appealing. As fun and interesting as it is to make intangilbe things,
+          it is satisfying to have a physical object which I designed and built. This is especially true with guitar effects--someday,
+          I would like to build my own amplifier and guitar as well.
+          </p>
+        <h3>Software</h3>
+          <p>I initially became interested in software through video games. The prospect of creating a world fascinated me. While this interest still exists,
+          (and I have some familiarity with a few game engines; Unity, Godot, and Love), I have not produced any original games worth mentioning (yet). In my quest to learn about
+          making games, aside from sound-design and pixel art, I learned a good deal about various programming languages,
+          including Lua, Python, JavaScript, CSS, HTML, Java, C, C++ and C#.
+          </p>
+        <!-- links/figures go here -->
+          <p>My work with effect pedals also lead me to working with assembly, particularly the SpinASM language for the Spin Semiconductor FV-1.</p>
+          <p>Most websites I have built from scratch have been projects done for the sake of learning. That includes this portfolio website. Additionally,
+          my guitar pedal website mentioned above was built with Squarespace, and my literary blog mentioned below is built with Wordpress,
+          so I am no stranger to that sort of technology as well.
+          </p>
+  <!-- none of the linked projects are interesting or demonstrate a deeper knowledge than this portfolio page - create or link to something which is actually cool
+    <div class="container-fluid text-center">
+  	<div class="row" id="programming-links">
+      	<div class="col-lg-6 project-tile">
+        		<a href="https://codepen.io/greze/pen/RJzazr" target="_blank">
+        			<img src="https://res.cloudinary.com/dqsbdwzek/image/upload/v1531408676/tribute_dbfbsj.png" alt="Tribute to Joan of Arc">
+        			<p>Tribute to Joan of Arc</p>
+        		</a>
+      	</div>
+      	<div class="col-lg-6 project-tile">
+        		<a href="https://codepen.io/greze/pen/mKZrdX" target="_blank">
+        			<img src="https://res.cloudinary.com/dqsbdwzek/image/upload/v1531408665/survey_puilqf.png" alt="Terse Philosophical Survey">
+        			<p>Terse Philosophical Survey</p>
+        		</a>
+      	</div>
+      </div>
+      <div class="row">
+      	<div class="col-lg-6 project-tile">
+        		<a href="https://codepen.io/greze/pen/QxXGjE" target="_blank">
+        			<img src="https://res.cloudinary.com/dqsbdwzek/image/upload/v1531408649/landing_vz7dss.png" alt="Red Witch Fuzz God II Landing Page">
+        			<p>Red Witch Fuzz God II Landing Page</p>
+        	</a>
+      </div>
+      <div class="col-lg-6 project-tile">
+        <a href="https://codepen.io/greze/pen/RBNdZv" target="_blank">
+        <img src="https://res.cloudinary.com/dqsbdwzek/image/upload/v1531408633/documentation_nvumib.png" alt="Lorem Ipsum Documentation">
+        <p>Lorem Ipsum Documentation</p>
+        </a>
+      </div>
+      </div>
     </div>
-    <div class="row">
-    	<div class="col-lg-6 project-tile">
-      		<a href="https://codepen.io/greze/pen/QxXGjE" target="_blank">
-      			<img src="https://res.cloudinary.com/dqsbdwzek/image/upload/v1531408649/landing_vz7dss.png" alt="Red Witch Fuzz God II Landing Page">
-      			<p>Red Witch Fuzz God II Landing Page</p>
-      	</a>
-    </div>
-    <div class="col-lg-6 project-tile">
-      <a href="https://codepen.io/greze/pen/RBNdZv" target="_blank">
-      <img src="https://res.cloudinary.com/dqsbdwzek/image/upload/v1531408633/documentation_nvumib.png" alt="Lorem Ipsum Documentation">
-      <p>Lorem Ipsum Documentation</p>
-      </a>
-    </div>
-    </div>
+  -->
+  </section>
+  <br>
+  <hr class="line">
+
+<section>
+  <div id="writing" class="text-center">
+  	<br>
+  	<h3>WRITING</h3>
+    <p>I have always enjoyed writing. I like to write fiction, but I have also written non-fiction, academic papers, advertising copy, and technical documentation.</p>
+  	<br>
+  	<div id="writing-links" class="row">
+      		<a href="http://www.amazon.com/dp/173493140X/ref=nosim?tag=skypuddleindu-20" id="novel" class="col-lg-4" target="_blank">
+  			<img src="https://res.cloudinary.com/dqsbdwzek/image/upload/v1589044501/ebookcover_mtibpm.jpg" alt="When Clouds Appear As Mountains" id="bookCover">
+  			     <p>When Clouds Appear As Mountains - A Novel</p>
+  		</a>
+  		<a href="https://www.pocketbiome.com" id="blog" class="col-lg-4" target="_blank">
+  			<img src="https://res.cloudinary.com/dqsbdwzek/image/upload/v1586023567/pocketbiome_dmk5ww.png" alt="pocket biome - experimental literature">
+  			<p>pocket biome - experimental literature</p>
+  		</a>
+  		<a href="articles.html" id="articles" class="col-lg-4" target="_blank">
+  			<img src="https://res.cloudinary.com/dqsbdwzek/image/upload/v1586192249/articles_ebfdqn.png" alt="articles">
+  			<p>Published Articles</p>
+  		</a>
+  	</div>
   </div>
--->
-</div>
-
+</section>
 <br>
 <hr class="line">
 
-<div id="writing" class="text-center">
-	<br>
-	<h3>WRITING</h3>
-  <p>I have always enjoyed writing. I like to write fiction, but I have also written non-fiction, academic papers, advertising copy, and technical documentation.</p>
-	<br>
-	<div id="writing-links" class="row">
-		<a href="http://www.amazon.com/dp/173493140X/ref=nosim?tag=skypuddleindu-20" id="novel" class="col-lg-4" target="_blank">
-			<img src="https://res.cloudinary.com/dqsbdwzek/image/upload/v1589044501/ebookcover_mtibpm.jpg" alt="When Clouds Appear As Mountains" id="bookCover">
-			     <p>When Clouds Appear As Mountains - A Novel</p>
-		</a>
-		<a href="https://www.pocketbiome.com" id="blog" class="col-lg-4" target="_blank">
-			<img src="https://res.cloudinary.com/dqsbdwzek/image/upload/v1586023567/pocketbiome_dmk5ww.png" alt="pocket biome - experimental literature">
-			<p>pocket biome - experimental literature</p>
-		</a>
-		<a href="articles.html" id="articles" class="col-lg-4" target="_blank">
-			<img src="https://res.cloudinary.com/dqsbdwzek/image/upload/v1586192249/articles_ebfdqn.png" alt="articles">
-			<p>Published Articles</p>
-		</a>
-	</div>
-</div>
-
-<br>
-<hr class="line">
-
-<div id="music" class="text-center">
-	<h3>MUSIC</h3>
-  <p>Music has been a lifelong passion for me. My primary instrument these days is the electric guitar, but I also enjoy playing the drums and anything else I can get my hands on.</p>
-	<br>
-	<div class="row music-links">
-		<a href="https://mountaincloud.bandcamp.com" class="col-lg-4" target="_blank">
-			<img src="https://res.cloudinary.com/dqsbdwzek/image/upload/v1588735797/leaving_suwrxd.jpg" alt="album cover">
-			<p>mountain cloud on bandcamp</p>
-		</a>
-		<a href="https://www.youtube.com/channel/UCJAJT04UgkJ_-56C8XPl6nw" class="col-lg-4" target="_blank">
-			<img src="https://res.cloudinary.com/dqsbdwzek/image/upload/v1588735997/cover_sjy5pd.jpg">
-			<p>mountain cloud on youtube</p>
-		</a>
-		<a href="stopmotion.html" class="col-lg-4" target="_blank">
-			<img src="https://res.cloudinary.com/dqsbdwzek/image/upload/v1589044472/crawling_p5rjz5.png" alt="screenshot">
-			<p>stop motion music videos</p>
-		</a>
-	</div>
-</div>
+<section>
+  <div id="music" class="text-center">
+  	<h3>MUSIC</h3>
+    <p>Music has been a lifelong passion for me. My primary instrument these days is the electric guitar, but I also enjoy playing the drums and anything else I can get my hands on.</p>
+  	<br>
+  	<div class="row music-links">
+  		<a href="https://mountaincloud.bandcamp.com" class="col-lg-4" target="_blank">
+  			<img src="https://res.cloudinary.com/dqsbdwzek/image/upload/v1588735797/leaving_suwrxd.jpg" alt="album cover">
+  			<p>mountain cloud on bandcamp</p>
+  		</a>
+  		<a href="https://www.youtube.com/channel/UCJAJT04UgkJ_-56C8XPl6nw" class="col-lg-4" target="_blank">
+  			<img src="https://res.cloudinary.com/dqsbdwzek/image/upload/v1588735997/cover_sjy5pd.jpg">
+  			<p>mountain cloud on youtube</p>
+  		</a>
+  		<a href="stopmotion.html" class="col-lg-4" target="_blank">
+  			<img src="https://res.cloudinary.com/dqsbdwzek/image/upload/v1589044472/crawling_p5rjz5.png" alt="screenshot">
+  			<p>stop motion music videos</p>
+  		</a>
+  	</div>
+  </div>
+</section>
 
 <br>
 <hr class="line">

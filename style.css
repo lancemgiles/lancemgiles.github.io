@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
 :root {
-  --text: #192618;
-  --bg: #5b8c57;
-  --nav: #7cbf76;
-  --link: #9df296;
-  --line: #3a5937;
+  --text: #0D1821;
+  --bg: #B4CDED;
+  --nav: #344966;
+  --link: #F0F4EF;
+  --line: #0D1821;
 }
 
 
@@ -23,7 +23,7 @@ img {
   max-width: 25%;
 }
 
-a {
+a, #navbar a {
   color: var(--link);
 }
 
@@ -35,12 +35,26 @@ hr.line {
   background-color: var(--line);
 }
 
+/* figure {
+  width: 25%;
+    float: left;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+} */
+
 #navbar {
   background-color: var(--nav);
 }
 
+
+
+#navbar a:hover {
+  color: var(--text);
+  background-color: var(--bg)
+}
+
 #about {
-  /*background-color: #A1E5AB;*/
   padding-top: 7%;
 }
 
@@ -54,29 +68,8 @@ hr.line {
 
 #bookCover {
   width: 20%;
-/*}
-
-#writing {
-  background-color: #90BAAD;
 }
 
-#music {
-  background-color: #8AA39B;
-}
-
-#devices {
-  background-color: #8AA2A9;
-}
-
-#programming {
-  background-color: #90BAAD;
-}
-
-#contact {
-  background-color: #A1E5AB;
-
-}
-*/
 #articlesPage {
   margin: 1%;
   background-color: #90BAAD;
