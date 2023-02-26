@@ -114,9 +114,8 @@ nav > ul > li {
 
 #articlesPage {
   margin: 1%;
-  background-color: #90BAAD;
-  height: 120vh;
-  padding-top: 7%;
+  height: 100vh;
+  padding-top: 5%;
 }
 
 #videos {
