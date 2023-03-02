@@ -24,6 +24,7 @@ body {
 img {
   width: 50%;
 }
+
 #me {
   border-radius: 50%;
   max-width: 25%;
@@ -56,10 +57,6 @@ nav > ul > li:hover {
   color: var(--text);
 }
 
-li > a, figure > a {
-  text-decoration: none;
-}
-
 nav > ul {
   display: flex;
   justify-content: space-evenly;
@@ -76,6 +73,9 @@ nav > ul > li {
   display: block;
 }
 
+li > a, figure > a {
+  text-decoration: none;
+}
 
 #about {
   padding-top: 7%;
@@ -104,65 +104,6 @@ nav > ul > li {
 #bookCover {
   width: 20%;
 }
-
-#articlesPage, #writing-portfolio {
-  margin: 1%;
-  height: 100vh;
-  padding-top: 5%;
-}
-
-#writing-portfolio {
-  text-align: center;
-  padding-bottom: 2.5rem;
-  display: grid;
-  grid-gap: 2.5rem;
-  grid-template-columns: 33% 33% 33%;
-}
-
-#article-list {
-  list-style-type: none;
-  grid-column-start: 2;
-  grid-column-end: 2;
-}
-
-.thumb {
-  width: 70%;
-  max-width: 800px;
-}
-
-./*row {
-  display: flex;
-}
-
-.column {
-  flex: 50%;
-  padding: 5px;
-}
-*/
-
-#books{
-  grid-column-start: 2;
-  grid-column-end: 2;
-}
-
-#blogs {
-  grid-column-start: 2;
-  grid-column-end: 2;
-}
-
-footer {
-  bottom: 0;
-  height: 2.5rem;
-  width: 100%;
-  grid-column-start: 2;
-  grid-column-end: 2;
-  background-color: var(--nav);
-}
-/*
-main {
-  position: relative;
-  min-height: 100vh;
-}*/
 
 #videos {
   margin: 1%;
