@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
 :root {
   --text: #0D1821;
   --bg: #B4CDED;
@@ -8,11 +14,6 @@
   --line: #0D1821;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  * {
-    scroll-behavior: smooth;
-  }
-}
 
 body {
   background-color: var(--bg);
@@ -43,14 +44,6 @@ a:hover {
   background-color: var(--line);
 }
 
-/* figure {
-  width: 25%;
-    float: left;
-    margin: 0;
-    text-align: center;
-    padding: 0;
-} */
-
 nav {
   background-color: var(--nav);
   width: 100%;
@@ -63,7 +56,7 @@ nav > ul > li:hover {
   color: var(--text);
 }
 
-li > a {
+li > a, figure > a {
   text-decoration: none;
 }
 
@@ -118,7 +111,58 @@ nav > ul > li {
   padding-top: 5%;
 }
 
+#writing-portfolio {
+  text-align: center;
+  padding-bottom: 2.5rem;
+  display: grid;
+  grid-gap: 2.5rem;
+  grid-template-columns: 33% 33% 33%;
+}
 
+#article-list {
+  list-style-type: none;
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+.thumb {
+  width: 70%;
+  max-width: 800px;
+}
+
+./*row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 5px;
+}
+*/
+
+#books{
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+#blogs {
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+footer {
+  bottom: 0;
+  height: 2.5rem;
+  width: 100%;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  background-color: var(--nav);
+}
+/*
+main {
+  position: relative;
+  min-height: 100vh;
+}*/
 
 #videos {
   margin: 1%;
