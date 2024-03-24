@@ -53,8 +53,8 @@ nav {
 }
 
 nav > ul > li:hover {
-  background-color: var(--bg);
-  color: var(--text);
+  text-decoration: underline;
+  color: var(--link);
 }
 
 nav > ul {
