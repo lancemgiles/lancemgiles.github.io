@@ -57,9 +57,9 @@ nav > ul > li {
   display: block;
 }
 
-nav > ul > li:hover, #navbar a:hover {
-  background-color: var(--bg);
-  color: var(--text);
+nav > ul > li:hover {
+  text-decoration: underline;
+  color: var(--link);
 }
 
 li > a, figure > a {
