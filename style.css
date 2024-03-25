@@ -77,6 +77,10 @@ li > a, figure > a {
   text-decoration: none;
 }
 
+.headings {
+  text-align: center;
+}
+
 #about {
   padding-top: 7%;
   text-align: center;
@@ -86,12 +90,8 @@ li > a, figure > a {
   width: 50%;
   padding: 5%;
 }
-/*
-#about-heading {
-  display: block;
-}*/
 
-#about-content {
+#about-content, .photo-row {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,14 +100,14 @@ li > a, figure > a {
 #tech {
   text-align: center;
 }
-
+/*
 #content {
   padding-top: 5%;
   padding-right: 5%;
   padding-left: 5%;
   text-align: left;
   width: 70%;
-}
+}*/
 
 #bookCover {
   width: 20%;
