@@ -101,6 +101,11 @@ li > a, figure > a {
 #tech, #writing, #music, .headings {
   text-align: center;
 }
+
+#tech, #writing, #music {
+  scroll-margin-top: 70px;
+}
+
 /*
 #content {
   padding-top: 5%;
