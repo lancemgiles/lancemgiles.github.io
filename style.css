@@ -91,7 +91,7 @@ li > a, figure > a {
   padding: 5%;
 }
 
-#about-content, .photo-row {
+#about-content, .row {
   display: flex;
   align-items: center;
   justify-content: center;
