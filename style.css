@@ -24,11 +24,13 @@ body {
 
 a {
   color: var(--link);
+  text-decoration: none;
 }
 
 a:hover {
   color: white;
   cursor: pointer;
+  text-decoration: underline;
 }
 
 img {
@@ -74,13 +76,12 @@ nav > ul > li {
   display: block;
 }
 
-li > a, figure > a {
+li > a {
   text-decoration: none;
 }
 
 #about {
   padding-top: 7%;
-  text-align: center;
 }
 
 .column {
@@ -99,22 +100,13 @@ li > a, figure > a {
   justify-content: center;
 }
 
-#tech, #writing, #music, .headings {
+#tech, #writing, #music, #about, .headings {
   text-align: center;
 }
 
 #tech, #writing, #music {
   scroll-margin-top: 70px;
 }
-
-/*
-#content {
-  padding-top: 5%;
-  padding-right: 5%;
-  padding-left: 5%;
-  text-align: left;
-  width: 70%;
-}*/
 
 #bookCover {
   max-width: 50%;
@@ -126,8 +118,3 @@ li > a, figure > a {
   height: 120vh;
   background-color: #8AA39B;
 }
-
-#survey-page {
-  text-align: center;
-  margin-top: 10%;
-}*/
