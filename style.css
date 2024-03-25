@@ -122,6 +122,13 @@ p.column3 {
   width: 30%;
 }
 
+.project {
+  width: 50%;
+  height: 30%;
+  margin: 0;
+  padding: 1%;
+}
+
 /*#videos {
   margin: 1%;
   padding-top: 7%;
