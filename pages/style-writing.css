@@ -80,14 +80,24 @@ li > a, figure > a {
 
 .row {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.column {
+  width: 50%;
+  padding: 5%;
+}
 
- #blogs img {
+img {
+  max-width: 75%;
+}
+
+/* #blogs img {
   width: 50rem;
   padding: 2.5rem;
   max-width: 50vw;
-}
+}*/
 
 footer {
   padding: 1rem;
