@@ -119,12 +119,17 @@ p.column {
   padding: 1%;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  flex: 1 1 0;
 }
 
-#bookCover {
-  max-width: 50%;
-}
+/*#bookCover {
+  height: 40vh;
+}*/
+
+/*.writing-images {
+  height: 40vh;
+  object-fit: contain;
+}*/
 
 /*#videos {
   margin: 1%;
