@@ -85,12 +85,7 @@ li > a {
 }
 
 .column {
-  width: 50%;
-  padding: 5%;
-}
-
-.column3 {
-  width: 33%;
+  flex: 1;
   padding: 1%;
   margin: 0;
 }
@@ -115,7 +110,7 @@ li > a {
   margin: 0;
 }
 
-p.column3 {
+p.column {
   width: 30%;
 }
 
