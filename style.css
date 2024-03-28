@@ -62,7 +62,6 @@ nav > ul > li:hover {
 nav > ul {
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;
   align-items: center;
   padding-inline-start: 0;
   margin-block: 0;
@@ -128,9 +127,13 @@ p.column {
   object-fit: contain;
 }*/
 
-/*#videos {
-  margin: 1%;
+#videos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  margin: 0;
   padding-top: 7%;
   height: 120vh;
-  background-color: #8AA39B;
 }
