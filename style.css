@@ -94,6 +94,7 @@ li > a {
   display: flex;
   align-items: center;
   justify-content: center;
+  /*wrap?*/
 }
 
 #tech, #writing, #music, #about, .headings {
