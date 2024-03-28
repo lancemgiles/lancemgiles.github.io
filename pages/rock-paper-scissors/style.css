@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+:root {
+	--text: #2c2a4a;
+	--bg: #cce8cc;
+	--highlight: #907ad6;
+	--altText: #4f518c;
+	--althl: #dabfff;
+}
+
+body {
+	background-color: var(--bg);
+	color: var(--text);
+	font-family: 'Lora', serif;
+  margin: 0;
+  text-align: center;
+}
+
+.row {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.player {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	flex: 0 0 30vw;
+	height: 30vh;
+}
+
+button {
+	background-color: var(--bg);
+	border-color: var(--text);
+}
+
+button:hover {
+	border-color: var(--althl);
+	background-color: var(--highlight);
+}
+
+.computer {
+	flex: 0 0 30vw;
+	height: 30vh;
+}
+
+#outcomes {
+	flex: 0 0 30vw;
+	height: 30vh;
+}
+
+img {
+	width: 32px;
+	height: 32px;
+}
