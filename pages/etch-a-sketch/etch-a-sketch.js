@@ -18,9 +18,6 @@ function draw() {
 		allSquares[i].addEventListener("mouseover", (event) => {
 			event.target.style.backgroundColor = "black";
 		});
-		allSquares[i].addEventListener("mouseout", (event) => {
-			event.target.style.backgroundColor = "white";
-		})
 	}
 }
 
