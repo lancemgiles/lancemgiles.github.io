@@ -13,5 +13,8 @@
 	width: 32px;
 	border: solid black 1px;
 	margin: 0;
+}
 
+.drawn {
+	background-color: black;
 }
