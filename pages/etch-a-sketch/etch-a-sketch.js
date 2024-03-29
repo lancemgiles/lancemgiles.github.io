@@ -6,18 +6,22 @@ function createGrid() {
 		squares[i] = document.createElement("div");
 		squares[i].className = "square";
 		gridContainer.appendChild(squares[i]);
-		let allSquares = document.querySelector("#gridContainer").children;
-		allSquares[i].id = "square" + i;
 	}
 }
 createGrid();
-// let square = document.querySelector(".square");
 
-// function draw() {
-	
-// 	square.classList.toggle("drawn");
-// }
+const allSquares = document.querySelector("#gridContainer").children;
 
-// addEventListener("mouseover", (event) => {
-// 	draw();
-// 	});
+function draw() {
+	for (let i = 0; i < 16; i++) {
+		allSquares[i].id = "square" + i;
+		allSquares[i].addEventListener("mouseover", (event) => {
+			event.target.style.backgroundColor = "black";
+		});
+		allSquares[i].addEventListener("mouseout", (event) => {
+			event.target.style.backgroundColor = "white";
+		})
+	}
+}
+
+draw();
