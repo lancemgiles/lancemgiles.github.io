@@ -1,39 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- to do:
-  make navbar into hamburger menu when window/screen is small
-  refactor stop motion page
--->
 <head>
   <meta charset="UTF-8">
   <title>Lance Malcolm Giles - Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
 
   <main>
 
-    <nav id="navbar">
-      <ul>
-        <li>
+    <nav id="navbar" class="normalNav">
+      
           <a href="#about">about</a>
-        </li>
-        <li>
+        
          <a href="#tech">technology</a>
-        </li>
-        <li>
+        
           <a href="#writing">writing</a>
-        </li>
-        <li>
+        
         	<a href="#music">music</a>
-        </li>
-        <li>
+        
           <a href="#contact">contact</a>
-        </li>
-      </ul>
+        
+          <a href="javascript:void(0);" class="icon" onclick="expand()">
+            <i class="fa fa-bars"></i>
+         </a>
     </nav>
 
     <section id="about">
@@ -41,7 +35,6 @@
         <h1>Lance Malcolm Giles</h1>
         <h3>is my name.</h3>
         <h5>this website is a work in progress</h5>
-      <!--  <p>My name is Lance Malcolm Giles and I am an artist.</p> -->
       	<br>
       </div>
       <div class="row">
@@ -126,12 +119,6 @@
           <img src="./images/pocketbiome-cropped.png" alt="pocket biome - experimental literature" class="writing-images">
           <figcaption>pocket biome - experimental literature</figcaption>
         </figure></a>
-  		<!-- <figure class="column project">
-  		  <a href="./pages/writing.html" target="_blank">
-  			 <img src="https://res.cloudinary.com/dqsbdwzek/image/upload/v1586192249/articles_ebfdqn.png" alt="articles" class="writing-images">
-  			 <figcaption>Published Articles</figcaption>
-  		  </a>
-      </figure> -->
   	</div>
     </section>
     <br>
