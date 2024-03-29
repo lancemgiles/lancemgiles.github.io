@@ -39,8 +39,7 @@
   }
   .normalNav.responsive a {
     float: none;
-    display: block;
-    
+    display: block;   
   }
 }
 
@@ -51,7 +50,6 @@
   top: 150px;
   text-align: center;
 }
-
 
 body {
   background-color: var(--bg);
