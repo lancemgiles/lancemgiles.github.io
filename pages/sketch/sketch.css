@@ -1,5 +1,6 @@
 :root {
-	--squareSize: 64px;
+	--squareSize: 240px;
+	--gridDimensions: 4;
 }
 
 h1 {
@@ -19,7 +20,7 @@ h1 {
 #gridContainer {
 	display: flex;
 	flex-wrap: wrap;
-	width: 256px;
+	width: 960px;
 	align-items: center;
 	justify-content: center;
 	margin: auto;

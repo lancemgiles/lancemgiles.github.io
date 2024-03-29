@@ -1,5 +1,8 @@
 const gridContainer = document.querySelector("#gridContainer");
-let gridSize = 16;
+const root = document.querySelector(":root");
+const rootStyle = getComputedStyle(root);
+let gridDimensions = rootStyle.getPropertyValue('--gridDimensions');
+let gridSize = parseInt(gridDimensions) ** 2;
 
 function createGrid() {
 	let squares = [];
@@ -11,7 +14,7 @@ function createGrid() {
 }
 createGrid();
 
-const allSquares = document.querySelector("#gridContainer").children;
+let allSquares = document.querySelector("#gridContainer").children;
 
 function draw() {
 	for (let i = 0; i < gridSize; i++) {
@@ -25,9 +28,20 @@ draw();
 
 const sizer = document.querySelector("#sizer");
 
+// function removeGrid() {
+// 	for (i = 0)
+// }
+
 function resize() {
-	sizer.addEventListener("onclick", () => {
-		let newSize = prompt("How many squares per row/column?");
+	sizer.addEventListener("click", () => {
+		let newSize = parseInt(prompt("How many squares per row/column?", "4"));
+		while (newSize > 100 || newSize < 1) {
+			newSize = parseInt(prompt("Please enter a number between 1 and 100"));
+		}
+		newSize = newSize.toString();
 		
-	})
+		// root.style.setProperty('--squareSize', newSize);
+		
+	});
 }
+resize();
