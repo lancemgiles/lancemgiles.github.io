@@ -1,0 +1,34 @@
+:root {
+	--squareSize: 64px;
+}
+
+h1 {
+	text-align: center;
+}
+
+#controls {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#sizer {
+	margin: 1%;
+}
+
+#gridContainer {
+	display: flex;
+	flex-wrap: wrap;
+	width: 256px;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+}
+
+.square {
+	box-sizing: border-box;
+	height: var(--squareSize);
+	width: var(--squareSize);
+	border: solid grey 1px;
+	margin: 0;
+}
