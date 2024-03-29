@@ -1,0 +1,17 @@
+#gridContainer {
+	display: flex;
+	flex-wrap: wrap;
+	width: 128px;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+}
+
+.square {
+	box-sizing: border-box;
+	height: 32px;
+	width: 32px;
+	border: solid black 1px;
+	margin: 0;
+
+}
