@@ -11,10 +11,6 @@
 	box-sizing: border-box;
 	height: 64px;
 	width: 64px;
-	border: solid black 1px;
+	border: solid grey 1px;
 	margin: 0;
-}
-
-.drawn {
-	background-color: black;
 }
