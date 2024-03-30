@@ -28,7 +28,7 @@ function draw() {
 
 
 function removeGrid() {
-	for (i = 0; i < allSquares.length; i++) {
+	for (let i = allSquares.length - 1; i >= 0; i--) {
 		allSquares[i].remove();
 	}
 }
@@ -52,17 +52,18 @@ function update() {
 // 	});
 function update() {
 	sizer.addEventListener("click", () => {
-		squaresPerRow = parseInt(prompt("How many squares per row/column?", "4"));
-		while (squaresPerRow > 100 || squaresPerRow < 1) {
+		let newSquaresPerRow = parseInt(prompt("How many squares per row/column?", "4"));
+		while (newSquaresPerRow > 100 || newSquaresPerRow < 1) {
 			squaresPerRow = Math.floor(parseInt(prompt("Please enter a number between 1 and 100")));
 		}
-		root.style.setProperty('--squaresPewRow', squaresPerRow);
+		root.style.setProperty('--squaresPewRow', newSquaresPerRow);
 		console.log("test");
 		removeGrid();
-		updateGridArea();
-		setSquareSize();
-		createGrid()
-		draw();
+		squaresPerRow = newSquaresPerRow;
+		// updateGridArea();
+		// setSquareSize();
+		// createGrid()
+		// draw();
 	});
 	return squaresPerRow;
 }
@@ -75,7 +76,7 @@ function updateGridArea() {
 }
 
 function setSquareSize() {
-	squareSize = canvas / squaresPerRow;
+	squareSize = Math.floor(canvas / squaresPerRow);
 	let squareSizeCSS = squareSize.toString() + "px";
 	root.style.setProperty('--squareSize', squareSizeCSS);
 	return squareSize;
