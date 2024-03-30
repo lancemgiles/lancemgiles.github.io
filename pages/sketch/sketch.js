@@ -1,24 +1,28 @@
 const gridCanvas = document.querySelector("#gridCanvas");
 const root = document.querySelector(":root");
 const rootStyle = getComputedStyle(root);
-let squaresPerRow = rootStyle.getPropertyValue('--sidePerRow');
+let squaresPerRow = rootStyle.getPropertyValue('--squaresPerRow');
 let gridArea = parseInt(squaresPerRow) ** 2;
 const canvas = parseInt(rootStyle.getPropertyValue('--canvas'));
 let squareSize = parseInt(rootStyle.getPropertyValue('--squareSize'));
 const sizer = document.querySelector("#sizer");
+let allSquares;
 
 function createGrid() {
 	let squares = [];
-	for (let i = 0; i < 16; i++) {
+	for (let i = 0; i < squaresPerRow; i++) {
 		squares[i] = document.createElement("div");
 		squares[i].className = "square";
 		gridCanvas.appendChild(squares[i]);
+
 	}
+	allSquares = document.querySelector("#gridCanvas").children;
+
 }
 
 
 function draw() {
-	for (let i = 0; i < 16; i++) {
+	for (let i = 0; i < squaresPerRow; i++) {
 		allSquares[i].id = "square" + i;
 		allSquares[i].addEventListener("mouseover", (event) => {
 			event.target.style.backgroundColor = "black";
@@ -34,23 +38,6 @@ function removeGrid() {
 }
 
 function update() {
-
-}
-// sizer.addEventListener("click", () => {
-// 		squaresPerRow = parseInt(prompt("How many squares per row/column?", "4"));
-// 		while (squaresPerRow > 100 || squaresPerRow < 1) {
-// 			squaresPerRow = Math.floor(parseInt(prompt("Please enter a number between 1 and 100")));
-// 		}
-// 		root.style.setProperty('--squaresPewRow', squaresPerRow);
-// 		console.log("test");
-// 		removeGrid();
-// 		updateGridArea();
-// 		setSquareSize();
-// 		createGrid()
-// 		draw();
-		
-// 	});
-function update() {
 	sizer.addEventListener("click", () => {
 		let newSquaresPerRow = parseInt(prompt("How many squares per row/column?", "4"));
 		while (newSquaresPerRow > 100 || newSquaresPerRow < 1) {
@@ -60,10 +47,10 @@ function update() {
 		console.log("test");
 		removeGrid();
 		squaresPerRow = newSquaresPerRow;
-		// updateGridArea();
-		// setSquareSize();
-		// createGrid()
-		// draw();
+		updateGridArea();
+		setSquareSize();
+		createGrid()
+		draw();
 	});
 	return squaresPerRow;
 }
@@ -82,19 +69,6 @@ function setSquareSize() {
 	return squareSize;
 }
 
-// function resize() {
-// 	removeGrid();
-// 	resizeSquaresPerRow()
-// 	updateGridArea();
-// 	setSquareSize();
-// 	createGrid();
-// 	draw();
-// }
-
-
-// program start
 createGrid();
-
-let allSquares = document.querySelector("#gridCanvas").children;
 draw();
 update();
