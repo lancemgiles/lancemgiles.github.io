@@ -1,6 +1,7 @@
 :root {
-	--squareSize: 240px;
-	--gridDimensions: 4;
+	--squareSize: 60px;
+	--squaresPerRow: 16;
+	--canvas: 960px;
 }
 
 h1 {
@@ -17,10 +18,10 @@ h1 {
 	margin: 1%;
 }
 
-#gridContainer {
+#gridCanvas {
 	display: flex;
 	flex-wrap: wrap;
-	width: 960px;
+	width: var(--canvas);
 	align-items: center;
 	justify-content: center;
 	margin: auto;
@@ -32,4 +33,5 @@ h1 {
 	width: var(--squareSize);
 	border: solid grey 1px;
 	margin: 0;
+/*	flex-basis: var(--squareSize)px;*/
 }
