@@ -10,7 +10,7 @@ let allSquares;
 
 function createGrid() {
 	let squares = [];
-	for (let i = 0; i < squaresPerRow; i++) {
+	for (let i = 0; i < gridArea; i++) {
 		squares[i] = document.createElement("div");
 		squares[i].className = "square";
 		gridCanvas.appendChild(squares[i]);
@@ -22,7 +22,7 @@ function createGrid() {
 
 
 function draw() {
-	for (let i = 0; i < squaresPerRow; i++) {
+	for (let i = 0; i < gridArea; i++) {
 		allSquares[i].id = "square" + i;
 		allSquares[i].addEventListener("mouseover", (event) => {
 			event.target.style.backgroundColor = "black";
