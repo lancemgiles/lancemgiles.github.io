@@ -17,9 +17,7 @@ function createGrid() {
 
 	}
 	allSquares = document.querySelector("#gridCanvas").children;
-
 }
-
 
 function draw() {
 	for (let i = 0; i < gridArea; i++) {
@@ -58,8 +56,7 @@ function update() {
 
 function updateGridArea() {
 	gridArea = squaresPerRow ** 2;
-	return gridArea;
-	
+	return gridArea;	
 }
 
 function setSquareSize() {

@@ -2,6 +2,12 @@
 	--squareSize: 60px;
 	--squaresPerRow: 16;
 	--canvas: 960px;
+	--bg: #cce8cc;
+	--button:  #dabfff;
+}
+
+body {
+	background-color: var(--bg);
 }
 
 h1 {
@@ -16,6 +22,7 @@ h1 {
 
 #sizer {
 	margin: 1%;
+	background-color: var(--button);
 }
 
 #gridCanvas {
