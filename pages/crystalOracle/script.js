@@ -16,3 +16,4 @@ function getAnswer() {
     return "No."
   }
 }
+getReading();
