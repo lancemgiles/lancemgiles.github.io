@@ -34,6 +34,11 @@ body {
 	width: 370px;
 	marin-top: 0;
 	height: 60px;
+	text-align: right;
+	padding: 5px;
+	border-radius: 10px;
+	font-size: 30px;
+	font-family: monospace;
 }
 
 .calcNumButtons, .calcFuncs, .enterBack {
