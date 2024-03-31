@@ -1,10 +1,5 @@
 let num1 = null;
 let num2 = null;
-// let operator = {
-// 	"+": function(a, b) {return a + b},
-// 	"-": function(a, b) {return a - b},
-// 	"*": function(a, b) {return }
-// }
 let operator = null;
 let displayValue = null;
 const calcNumButtons = document.querySelector(".calcNumButtons").children;
@@ -16,20 +11,21 @@ const add = document.querySelector("#add");
 const sub = document.querySelector("#sub");
 const mult = document.querySelector("#mult");
 const divide = document.querySelector("#divide");
+const enterBack = document.querySelector(".enterBack");
 
 function operate(num1, operator, num2) {
 	switch (operator) {
 		case "+":
-			return num1 + num2;
+			return (num1 + num2);
 			break;
 		case "-":
-			return num1 - num2;
+			return (num1 - num2);
 			break;
 		case "*":
-			return num1 * num2;
+			return (num1 * num2);
 			break;
 		case "/":
-			return num1 / num2;
+			return (num1 / num2);
 			break;
 	}
 }
@@ -39,17 +35,27 @@ function refreshScreen() {
 }
 
 function backButton() {
-	back.addEventListener("click", () => refreshScreen());
-	displayValue = 0;
+	back.addEventListener("click", () => {
+		refreshScreen();
+		displayValue = 0;
+		num1 = null;
+		num2 = null;
+	});
 }
 
-function displayValues() {
+function getValues() {
 	for (let i = 0; i < calcNumButtons.length; i++) {
 		calcNumButtons[i].addEventListener("click", () => {
 			displayValue = calcNumButtons[i].innerText;
 			screen.innerText += displayValue;
 			displayValue = screen.innerText;
-			console.log(displayValue);
+			if (num1 === null) {
+				num1 = parseInt(displayValue);
+			} else {
+				num2 = parseInt(displayValue);
+			}
+			console.log(num1);
+			console.log(num2);
 		});
 	}
 	return displayValue;
@@ -57,35 +63,26 @@ function displayValues() {
 
 function operatorKeyPressed() {
 	for (let i = 0; i < operators.length; i++) {
-		if ((operators[i] != enter) || (operators[i] != back)) {
+		if (operators[i] != enterBack) {
 			operators[i].addEventListener("click", () => {
 				operator = operators[i].innerText;
-				num1 = parseInt(displayValue);
+				console.log(operator);
 				refreshScreen();
-				displayValues();
-				num2 = displayValue;
 			});
-		} else if (operators[i] == back) {
-			backButton();
-		} else if (operators[i] == enter) {
-			equalsPressed();
 		}
 	}
-
-	return operator;
-}
-
-function getNum2() {
-	displayValues();
 }
 
 function equalsPressed() {
 	equals.addEventListener("click", () => {
-		operate(num1, operator, num2)
+		refreshScreen();
+		displayValue = operate(num1, operator, num2);
+		screen.innerText += displayValue.toString();
+		console.log(screen.innerText);
 	});
+	return displayValue;
 }
-
-
-
-displayValues();
+getValues();
 operatorKeyPressed();
+backButton();
+equalsPressed();

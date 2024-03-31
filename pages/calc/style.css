@@ -32,7 +32,7 @@ body {
 #calcScreen {
 	background-color: var(--screen);
 	width: 370px;
-	marin-top: 0;
+	margin-top: 0;
 	height: 60px;
 	text-align: right;
 	padding: 5px;
