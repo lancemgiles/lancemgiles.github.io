@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+:root {
+	--bg: #DBD5B5;
+	--text: #320E3B;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Lora', serif;
+  margin: 0;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
