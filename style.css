@@ -41,6 +41,15 @@
     float: none;
     display: block;   
   }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .project {
+    width: 100%;
+  }
+
 }
 
 .dropdown {
