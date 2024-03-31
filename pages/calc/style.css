@@ -1,0 +1,81 @@
+:root {
+	--text: #01161E;
+	--body: #124559;
+	--bonus: #598392;
+	--screen: #aec3b0;
+	--btn: #eff6e0;
+}
+
+body {
+	display: flex;
+	margin: 0 sauto;
+	color: var(--text);
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+#calcBody {
+	background-color: var(--body);
+	border-radius: 25px;
+	display: flex;
+	flex: 0 0 400px;
+	width: 420px;
+	height: 420px;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+}
+
+#calcScreen {
+	background-color: var(--screen);
+	width: 370px;
+	marin-top: 0;
+	height: 60px;
+}
+
+.calcNumButtons, .calcFuncs, .enterBack {
+	display: flex;
+	gap: 10px;
+}
+
+.calcNumButtons {
+	width: 200px;
+	flex-wrap: wrap;
+}
+
+button {
+	background-color: var(--btn);
+	flex: 0 0 auto;
+}
+
+.calcNumButtons > button {
+	width: 50px;
+	height: 50px;
+	flex: 0 0 auto;
+	font-size: 20px;	
+}
+
+.calcFuncs {
+	flex-direction: column;
+}
+
+.calcFuncs > button {
+	width: 120px;
+	height: 35px;
+	font-size: 25px;
+	padding: 0;
+}
+
+.enterBack {
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.enterBack > button {
+	width: 50px;
+	height: 50px;
+}
