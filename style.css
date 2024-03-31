@@ -108,7 +108,7 @@ img {
 }
 
 .column, .project {
-  flex: auto;
+  flex: 1 1 25vw;
   padding: 1%;
   margin: 0;
 }
@@ -117,7 +117,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  /*wrap?*/
+  gap: 5%;
 }
 
 #tech, #writing, #music, #about, .headings {
@@ -138,8 +138,16 @@ p.column {
 }
 
 .project {
-  width: 100%;
+  max-width: 30%;
   height: 100%;
+}
+
+.project:hover {
+  border: solid white 1px;
+}
+
+.software {
+  flex-wrap: wrap;
 }
 
 /*#bookCover {
