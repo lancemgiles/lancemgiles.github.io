@@ -200,4 +200,8 @@ p.column {
     min-width: 80%;
     font-size: 14px;
   }
+
+  .hardware-image {
+    min-width: 100%;
+  }
 }
