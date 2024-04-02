@@ -159,15 +159,6 @@ p.column {
   flex-wrap: wrap;
 }
 
-/*#bookCover {
-  height: 40vh;
-}*/
-
-/*.writing-images {
-  height: 40vh;
-  object-fit: contain;
-}*/
-
 #videos {
   display: flex;
   flex-direction: column;

@@ -14,7 +14,6 @@
   --line: #0D1821;
 }
 
-
 body {
   background-color: var(--bg);
   color: var(--text);
@@ -25,14 +24,16 @@ body {
 
 a {
   color: var(--link);
+  text-decoration: none;
 }
 
 a:hover {
   color: white;
   cursor: pointer;
+  text-decoration: underline;
 }
 
-nav {
+#navbar {
   background-color: var(--nav);
   width: 100%;
   height: 50px;
@@ -40,7 +41,7 @@ nav {
   margin-right: 5rem;
 }
 
-nav > ul {
+#navbar > ul {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -51,19 +52,14 @@ nav > ul {
   top: 0;
 }
 
-nav > ul > li {
+#navbar > ul > li {
   margin: 0 0.2rem;
   padding: 1rem;
   display: block;
 }
 
-nav > ul > li:hover {
-  text-decoration: underline;
-  color: var(--link);
-}
-
-li > a, figure > a {
-  text-decoration: none;
+img {
+  max-width: 33vw;
 }
 
 #published-articles {
@@ -74,32 +70,25 @@ li > a, figure > a {
   list-style: none;
 }
 
-#book-cover {
-  width: 20%;
-}
-
 .row {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 }
 
-.column {
-  width: 50%;
+.project {
+  flex: 1 1 auto;
   padding: 5%;
+  margin: 0;
+  height: 100%;
+  text-align: center;
 }
 
-img {
-  max-width: 75%;
+.project:hover {
+  border: solid white 1px;
 }
 
-/* #blogs img {
-  width: 50rem;
-  padding: 2.5rem;
-  max-width: 50vw;
-}*/
-
-footer {
-  padding: 1rem;
-  background-color: var(--nav);
+.bookCover {
+  max-height: 33vh;
 }
