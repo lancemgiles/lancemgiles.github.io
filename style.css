@@ -18,40 +18,6 @@
   display: none;
 }
 
-@media screen and (max-width: 600px) {
-  .normalNav a:not(:last-child) {display: none;}
-  .normalNav a.icon {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .normalNav.responsive {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-  }
-  .normalNav.responsive > .icon {
-    position: absolute;
-    display: block;
-    text-align: center;
-
-  }
-  .normalNav.responsive a {
-    float: none;
-    display: block;   
-  }
-
-  .row {
-    flex-direction: column;
-  }
-
-  .project {
-    width: 100%;
-  }
-
-}
-
 .dropdown {
   position: relative;
   background-color: var(--nav);
@@ -168,4 +134,43 @@ p.column {
   margin: 0;
   padding-top: 7%;
   height: 120vh;
+}
+
+@media screen and (max-width: 600px) {
+  .normalNav a:not(:last-child) {
+    display: none;
+  }
+
+  .normalNav a.icon {
+    display: block;
+  }
+
+  .normalNav.responsive {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .normalNav.responsive > .icon {
+    position: absolute;
+    display: block;
+    text-align: center;
+  }
+
+  .normalNav.responsive a {
+    float: none;
+    display: block;   
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .project {
+    width: 100%;
+  }
+
+  #about {
+  padding-top: 15%;
+  }
 }
