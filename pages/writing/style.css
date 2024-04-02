@@ -92,3 +92,7 @@ img {
 .bookCover {
   max-height: 33vh;
 }
+
+.book {
+  max-width: 33%;
+}
