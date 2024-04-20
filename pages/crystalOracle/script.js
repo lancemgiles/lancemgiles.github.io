@@ -8,9 +8,9 @@ function getReading() {
 }
 
 function getAnswer() {
-  if ((Math.floor(Math.random() * 10) % 2) === 0) {
+  if ((Math.floor(Math.random() * 100) % 2) === 0) {
     return "Yes."
-  } else if ((Math.floor(Math.random() * 10) % 3) === 0) {
+  } else if ((Math.floor(Math.random() * 100) % 5) === 0) {
     return "Hmm... Ask again later."
   } else {
     return "No."
