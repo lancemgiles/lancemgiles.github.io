@@ -95,11 +95,11 @@ img {
   gap: 5%;
 }
 
-#tech, #writing, #music, #about, .headings {
+#tech, #writing, #music, #about, .headings, #design {
   text-align: center;
 }
 
-#tech, #writing, #music {
+#tech, #writing, #music, #design {
   scroll-margin-top: 70px;
   padding: 0 1%;
 }
@@ -131,6 +131,14 @@ p.column {
 
 .project figure {
   min-width: 100%;
+}
+
+#longPedal {
+  max-width: 25%;
+}
+
+#sprite {
+  min-width: 70%;
 }
 
 #videos {
