@@ -107,7 +107,7 @@ img {
   text-align: center;
 }
 
-.headings {
+.headings, #navbar {
   font-family:'Courier New', Courier, monospace;
 }
 
