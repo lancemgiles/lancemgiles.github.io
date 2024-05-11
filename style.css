@@ -2,9 +2,10 @@
 
 :root {
   --text: #0D1821;
+  --bodyLink: #92654F;
   --bg: #B4CDED;
   --nav: #344966;
-  --link: #F0F4EF;
+  --navLink: #F0F4EF;
   --line: #0D1821;
 }
 
@@ -34,8 +35,15 @@ body {
 }
 
 a {
-  color: var(--link);
   text-decoration: none;
+}
+
+nav a {
+  color: var(--navLink)
+}
+
+section a {
+  color: var(--bodyLink)
 }
 
 a:hover {
