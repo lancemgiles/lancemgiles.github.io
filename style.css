@@ -107,6 +107,10 @@ img {
   text-align: center;
 }
 
+.headings {
+  font-family:'Courier New', Courier, monospace;
+}
+
 #tech, #writing, #music, #design {
   scroll-margin-top: 70px;
   padding: 0 1%;
