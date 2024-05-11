@@ -39,11 +39,11 @@ a {
 }
 
 nav a {
-  color: var(--navLink)
+  color: var(--navLink);
 }
 
 section a {
-  color: var(--bodyLink)
+  color: var(--bodyLink);
 }
 
 a:hover {
@@ -74,11 +74,6 @@ img {
 
 .line {
   background-color: var(--line);
-}
-
-#navbar > a:hover {
-  text-decoration: underline;
-  color: var(--link);
 }
 
 #navbar > a {
