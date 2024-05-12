@@ -39,9 +39,10 @@ p {
   line-height: 19px;
   text-align: justify;
   padding: 5%;
+  margin: -5%;
 }
 
-#writing p, #music p, #contact p {
+#writing p, #music p, #contact p, #about p {
   text-align: center;
 }
 
