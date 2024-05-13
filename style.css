@@ -34,41 +34,6 @@ body {
   margin: 0;
 }
 
-p {
-  font-size: 16px;
-  line-height: 19px;
-  text-align: justify;
-  padding-left: 10%;
-  padding-right: 10%;
-  
-}
-
-#writing p, #music p, #contact p, #about p {
-  text-align: center;
-}
-
-a {
-  text-decoration: none;
-}
-
-nav a {
-  color: var(--navLink);
-}
-
-section a {
-  color: var(--bodyLink);
-}
-
-a:hover {
-  color: white;
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-img {
-  max-width: 70%;
-}
-
 #navbar {
   background-color: var(--nav);
   width: 100%;
@@ -80,39 +45,49 @@ img {
   align-items: center;
 }
 
-#me {
-  border-radius: 50%;
-  max-width: 20%;
-}
-
-.line {
-  background-color: var(--line);
-}
-
-#navbar > a {
+nav a {
+  color: var(--navLink);
   margin: 0 0.2rem;
   padding: 1rem;
 }
 
-#about {
-  padding-top: 7%;
+a {
+  text-decoration: none;
 }
 
-.column, .project {
-  flex: 1 1 25vw;
-  padding: 1%;
-  margin: 0;
+a:hover {
+  color: white;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
-#about-content, .row {
+.row {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5%;
 }
 
-#tech, #writing, #music, #about, .headings, #design {
-  text-align: center;
+section a {
+  color: var(--bodyLink);
+}
+/* replace some heading sizes with different font weights and color changes */
+/* bring items that are more closely related closer together in space */
+p {
+  font-size: 16px;
+  line-height: 19px;
+  text-align: justify;
+  padding-left: 15%;
+  padding-right: 10%;
+  /* max-width for different screen sizes, about 600 for desktop */
+}
+
+img {
+  max-width: 70%;
+}
+
+.line {
+  background-color: var(--line);
 }
 
 .headings, a {
@@ -121,6 +96,40 @@ img {
 
 .headings {
   letter-spacing: -1.2px;
+}
+
+#about {
+  padding-top: 7%;
+}
+
+#about p, #about ul {
+  text-align: left;
+  padding-left: 15%;
+}
+
+#me {
+  border-radius: 50%;
+  max-width: 20%;
+  padding-right: 10%;
+}
+
+#writing p, #music p, #contact p {
+  text-align: center;
+}
+
+
+
+
+
+
+.column, .project {
+  flex: 1 1 25vw;
+  padding: 1%;
+  margin: 0;
+}
+
+#tech, #writing, #music, #about, .headings, #design {
+  text-align: center;
 }
 
 #tech, #writing, #music, #design {
@@ -142,7 +151,6 @@ p.column {
   height: 100%;
   display: flex;
   justify-content: center;
-
 }
 
 .project:hover {
