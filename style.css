@@ -35,10 +35,16 @@
 }
 
 body {
-  background-color: var(--bg);
+  background-color: var(--alt);
   color: var(--text);
   font-family: Mate, serif;
   margin: 0;
+}
+
+main {
+  background-color: var(--bg);
+  width: 80%;
+  margin-left: 10%;
 }
 
 nav {
@@ -116,7 +122,7 @@ h1, h2 {
   padding-top: 7%;
 }
 
-#about p, #about ul, #writing ul {
+#about p, #about ul {
   text-align: left;
   padding-left: 15%;
 }
@@ -246,6 +252,16 @@ p.column {
   border: solid white 1px;
 }
 
+#writing .project {
+  min-width: 65%;
+}
+
+#writing ul {
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: left;
+}
+
 .software {
   flex-wrap: wrap;
 }
@@ -253,10 +269,6 @@ p.column {
 .project figure {
   min-width: 100%;
 }
-
-/* #longPedal {
-  max-width: 25%;
-} */
 
 #sprite {
   min-width: 70%;
