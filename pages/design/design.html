@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <link rel="stylesheet" href="../../style.css">
-  <script src="script.js" defer></script>
+  <script src="../../slideshow.js" defer></script>
+  <script src="../../script.js" defer></script>
 </head>
 
 <body>
@@ -33,31 +34,55 @@
         <p>In addition to graphic design, I am very experienced in more traditional art forms. Many of my guitar pedals are hand-painted or hand-engraved.</p>
       </div>
 
-      <div class="row software">
-        <a href="https://www.dogmandevices.com" target="_blank" class="project">
-          <figure>
-            <img src="./images/logo-m2-banner.png" alt="Dogman Devices logo">
-            <figcaption>Dogman Devices Logo</figcaption>
-          </figure>
-        </a>
+      <h2>Logos and Products</h2>
+
+      <p style="text-align: center;"">Find more examples of my work with products on <a href="https://wwww.dogmandevices.com" target="_blank">my guitar effect pedal webstie</a>.</p>
+      <br>
+      
+      <div class="slideshow">
+
+        <div class="slides fade">
+          <img src="./images/logo-m2-banner.png" alt="Dogman Devices logo">
+          <div class="caption">Dogman Devices logo</div>
+        </div>
+
+        <div class="slides fade">
+          <img src="./images/proof.png" alt="Proof of concept for a new pedal" id="longPedal">
+          <div class="caption">Proof of concept for Tough Tiddlywinks</div>
+        </div>
+
+        <div class="slides fade">
+          <img src="./images/proof-o.png" alt="Proof of concept for a new pedal">
+          <div class="caption">Proof of concept for Ouroboros</div>
+        </div>
+            
+        <div class="slides fade">
+          <img src="./images/mlpht.jpg" alt="Take A Hike Overdrive">
+          <div class="caption">Take A Hike Overdrive</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+
+      <!-- <div class="row">
+        
         <a href="https://www.dogmandevices.com" target="_blank" class="project">
           <figure>
             <img src="./images/product-samples.png" alt="Various guitar effect pedals and T-shirts">
             <figcaption>Guitar pedal graphics and T-shirts</figcaption>
           </figure>
         </a>
-        <a href="#" target="_blank" class="project">
-          <figure>
-            <img src="./images/proof.png" alt="Proof of concept for a new pedal" id="longPedal">
-            <figcaption>Proof of concept for a new pedal</figcaption>
-          </figure>
-        </a>
-        <a href="#" target="_blank" class="project">
-          <figure>
-            <img src="./images/proof-o.png" alt="Proof of concept for a new pedal">
-            <figcaption>Proof of concept for another new pedal</figcaption>
-          </figure>
-        </a>
+        
+        
         <a href="#" target="_blank" class="project">
           <figure>
             <img src="./images/monthwithnogods.png" alt="Upcoming cover for a novel">
@@ -76,7 +101,7 @@
             <figcaption>"Murasaki" Firefox theme</figcaption>
           </figure>
         </a>
-      </div>
+      </div> -->
     </section>
 
 
