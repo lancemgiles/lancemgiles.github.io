@@ -50,6 +50,7 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  z-index: 1;
 }
 
 nav a {
@@ -63,7 +64,7 @@ a {
 }
 
 a:hover {
-  color: var(--alt)
+  color: var(--alt);
   cursor: pointer;
   text-decoration: underline;
 }
@@ -148,7 +149,7 @@ h1, h2 {
   margin: auto;
 }
 
-.slides {
+.slidesProd, .slidesCov {
   display: none;
   width: 100%
 }
@@ -188,7 +189,7 @@ h1, h2 {
   text-align: center;
 }
 
-.dot {
+.dotP, .dotC {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -199,7 +200,7 @@ h1, h2 {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active, .dotP:hover, .dotC:hover {
   background-color: var(--alt);
 }
 
@@ -213,7 +214,7 @@ h1, h2 {
   to {opacity: 1}
 }
 
-.slides img {
+.slidesProd img, .slidesCov img {
   width: 50%;
   height: 50%;
 }
