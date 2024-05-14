@@ -12,6 +12,8 @@
   --nav: #344966;
   --navLink: #F0F4EF;
   --line: #0D1821;
+  --special: #f7dede;
+  --alt: #e08285;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -61,13 +63,13 @@ a {
 }
 
 a:hover {
-  color: #e08285;
+  color: var(--alt)
   cursor: pointer;
   text-decoration: underline;
 }
 
 nav a:hover {
-  color: #f7dede;
+  color: var(--special);
 }
 
 .row {
@@ -174,7 +176,7 @@ h1, h2 {
 }
 
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  color: var(--alt);
 }
 
 .caption {
@@ -191,23 +193,23 @@ h1, h2 {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: var(--bodyLink);
+  background-color: var(--special);
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #e08285;
+  background-color: var(--alt);
 }
 
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 2.5s;
 }
 
 @keyframes fade {
-  from {opacity: .4}
+  from {opacity: .5}
   to {opacity: 1}
 }
 
