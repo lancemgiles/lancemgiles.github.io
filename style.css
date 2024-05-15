@@ -115,6 +115,7 @@ h1, h2, a {
 
 h1, h2 {
   letter-spacing: -1.2px;
+  text-align: center;
 }
 
 #about, #design, #tech, #writing, #music {
@@ -287,9 +288,7 @@ p.column {
 
 @media screen and (max-width: 600px) {
 
-  p {
-    font-size: 16px;
-  }
+ 
 
   .normalNav a:not(:last-child) {
     display: none;
@@ -329,14 +328,28 @@ p.column {
     flex: auto;
   }
 
-  #tech, #writing, #music {
+  #about, #design, #tech, #writing, #music {
     width: 80%;
-    padding: 0 10%;
+    padding: 15% 10% 0;
   }
 
-  p {
+  #videos {
+    width: 80%;
+    padding: 25% 10% 5%;
+  }
+
+  #design p, #tech p, #writing p {
     min-width: 80%;
-    font-size: 14px;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  #writing p {
+    font-size: 14px;;
+  }
+
+  iframe {
+    width: 80%;
   }
 
   .hardware-image {
