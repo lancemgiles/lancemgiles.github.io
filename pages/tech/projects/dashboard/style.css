@@ -1,0 +1,240 @@
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
+
+@import 'modern-normalize/modern-normalize.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+  display: grid;
+  grid-template-columns: 195px repeat(3, 570px);
+  grid-template-rows: 190px 300px 300px 300px;
+}
+
+a, h1, h2, h3, h4, h5, button {
+  font-family: Inconsolata, 'Courier New', Courier, monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  display: inline-block;
+}
+
+p {
+  font-family: Nunito, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#sidebar {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  background-color: #5867b4;
+}
+
+#sidebar a {
+  color: #EAFFE6;
+  display: block;
+  letter-spacing: -1px;
+}
+
+#sidebar a:hover {
+  color: #fca3cf;
+}
+
+#sidebar i {
+
+  padding: 1.6rem;
+}
+
+#dash {
+  font-size: 24px;
+}
+
+#header {
+  background-color: #fca3cf;
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding: 1rem;
+  border-bottom: solid 2px #4d0000c5;
+}
+
+#header a {
+  color: #4D0000;
+}
+
+#header a:hover {
+  color: #5a63e0;
+}
+
+#top-row {
+  display: inline-block;
+}
+
+#top-row i {
+  padding-left: 2rem;
+  padding-right: 1.5rem;
+}
+
+#top-row input {
+  width: 1250px;
+  border-radius: 10px;
+  margin-right: 100px;
+}
+
+#top-row p {
+  display: inline-block;
+  padding-left: 1rem;
+}
+
+#menu-user {
+  position: relative;
+  top: 17%;
+}
+
+#bottom-row {
+  display: inline-flex;
+  align-items: center;
+  justify-content: left;
+}
+
+#user-icon {
+  margin-left: 2rem;
+  flex-basis: 100px;
+}
+
+#bottom-row p {
+  flex-basis: 100px;
+  margin-right: 400px;
+  font-weight: bold;
+}
+
+#bottom-row button {
+  margin: 2rem;
+  border-radius: 10px;
+  background-color: #a9aff0;
+  border: 1px solid #EAFFE6;
+  color: #6e435f;
+  padding: 0.5rem;
+}
+
+#bottom-row button:hover {
+  background-color: #7e83c5;
+  color: #EAFFE6;
+}
+
+#card-area {
+ background-color: #e7dede;
+ display: grid;
+ grid-column-start: 2;
+ grid-column-end: 5;
+ grid-row-start: 2;
+ grid-row-end: 5;
+ padding: 1rem;
+ grid-template-rows: 56px 300px 300px 300px;
+}
+
+#projects {
+  display: grid;
+  grid-row: 1 / 2;
+  grid-column: 1 / 4;
+}
+
+#cards {
+  display: grid;
+}
+
+.card {
+  display: grid;
+  background-color: #fca3cf;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 0 1rem 1rem 1rem;
+  grid-template-rows: 45px 100px 18px;
+  grid-template-columns: 150px 150px 150px;
+}
+
+.card h3 {
+  grid-row: 1 / 2;
+  grid-column: 1 / 4;
+  margin-bottom: 5px;
+}
+
+.card p {
+  margin: 1px 0;
+  padding-bottom: 2px;
+  grid-column: 1 / 4;
+  font-size: 14px;
+}
+
+.card i {
+  grid-row: 3 / 4;
+  align-self: center;
+  justify-self: center;
+}
+
+.col-1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.col-2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.col-3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row: 1 / 3;
+}
+
+#c4 {
+  grid-row: 1 / 2;
+}
+
+#c5 {
+  grid-row: 2 / 3;
+}
+
+.card:not(#announcements, #trending) {
+  border-left: solid 3px white;
+}
+
+#announcements {
+  grid-template-rows: repeat(3, 90px);
+  grid-template-columns: 500px;
+}
+
+#trending {
+  grid-template-rows: repeat(4, 65px);
+  grid-template-columns: 50px 350px;
+}
+
+#trends {
+  display: grid;
+  grid-template-columns: 75px 400px;
+  grid-template-rows: repeat(4, 65px);
+}
+
+.trend {
+  display: grid;
+  grid-template-columns: 75px 200px 200px;
+  grid-column: 1 / 3;
+  margin-left: 25px;
+}
+
+.trend svg {
+  position: relative;
+  top: 30%;
+}
+
+#t1 {
+  grid-row: 1 / 2;
+}
+
