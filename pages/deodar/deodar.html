@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Lance Malcolm Giles - Programmer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../style.css">
+    <script src="../../script.js" defer></script>
+  </head>
+
+<body>
+
+  <nav class="normalNav" id="navbar">
+    <a href="../../index.html">about</a>
+    <a href="deodar.html">Deodar</a>
+    <a href="../design/design.html">design</a>
+    <a href="../tech/tech.html">technology</a>
+    <a href="../writing/writing.html">writing</a>
+    <a href="../music/music.html">music</a>
+    <a href="javascript:void(0);" class="icon" onclick="expand()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </nav>
+
+  <main>
+
+    <section id="deodar">
+      <h1>DEODAR</h1>
+      <h2>A non-violent 2D platformer for Steam</h2>
+      <img src="./images/deodar.png" alt="Deodar title screen">
+      <p>This is my first complete and polished video game. It is coming to Steam on July 15th, 2025 for Linux and Windows.</p>
+      
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/laoU-lu7maE?si=E4CI-arLhJMzoHu7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      <h2>Technologies utilized:</h2>
+
+      <ul id="deodar_list">
+
+        <li>Game logic built using the <a href="https://godotengine.org/" target="_blank">Godot</a> game engine's <a href="https://gdscript.com/" target="_blank">GDscript</a></li>
+          <ul>
+            <li>I chose Godot because it runs well on Linux, my operating system of choice, and the node-based structure is very intuitive</li>
+            <li>I chose to use GDscript because this language was designed specifically for Godot and my familiarity with Python</li>
+          </ul>
+        <li><a href="https://store.steampowered.com/" target="_blank">Steam</a> integration achieved through <a href="https://godotsteam.com/" target="_blank">GodotSteam</a></li>
+          <ul>
+            <li>I am releasing on Steam to maximize my potential audience, and GodotSteam is the most mature tool for achieving this</li>
+          </ul>
+        <li>Visual assets and animations created using <a href="https://libresprite.github.io/#!/" target="_blank">LibreSprite</a>, <a href="https://www.gimp.org/" target="_blank">GIMP</a>, and <a href="https://inkscape.org/" target="_blank">Inkscape</a></li>
+          <ul>
+            <li>I chose these programs largely because I was already familiar with them from other <a href="../design/design.html">design</a> and <a href="../tech/tech.html">development</a> projects</li>
+          </ul>
+        <li>Sound effects created with <a href="https://sfxr.me/" target="_blank">https://sfxr.me/</a> and <a href="https://vcvrack.com/" target="_blank">VCV Rack</a> and <a href="https://www.audacityteam.org/" target="_blank">Audacity</a></li>
+          <ul>
+            <li>I used sfxr primarily for inspiration as it is very easy to generate a number of sound samples for retro-style games</li>
+            <li>I chose VCV Rack to create sound effects because it allows me to freely explore all of the sound design potential of modular synths</li>
+            <li>Audacity was a natural choice because I only needed to do some simple track editing for my sound design</li>
+          </ul>
+        <li>Music created with <a href="https://vcvrack.com/" target="_blank">VCV Rack</a> and <a href="https://www.audacityteam.org/" target="_blank">Audacity</a></li>
+          <ul>
+            <li>I chose VCV Rack in order to make atomospheric ambient music to set the mood for the game world</li>
+            <li>I have been using Audacity to record and edit <a href="https://mountaincloud.bandcamp.com/" target="_blank">music</a> since 2010, so this was a simple choice</li>
+          </ul>
+        <li>Version control with <a href="https://git-scm.com/" target="_blank">git</a></li>
+          <ul>
+            <li>I chose git because of version control is a critical element of any project, and I have been using it for a decade</li>
+          </ul>
+      </ul>
+
+      <img src="./images/lvl16a.png" alt="Deodar action shot">
+
+      <img src="./images/new_game_screen.png" alt="Deodar title screen">
+
+      <img src="./images/pause_screen.png" alt="Deodar pause screen">
+      
+    </section>
+
+
+    <br>
+    <hr class="line">
+    <section id="contact" class="headings">
+      <p>contact me:       
+        <a href="https://github.com/lancemgiles" target="_blank" id="profile-link"><i class="fab fa-github"></i></a>
+        <a href="mailto:lmgiles6@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+      </p>
+      <br>
+    </section>
+
+  </main>
+
+</body>
+
+</html>

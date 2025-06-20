@@ -113,12 +113,12 @@ h1, h2, a {
   font-family:Hermit, Courier, monospace;
 }
 
-h1, h2 {
+h1, h2, h3 {
   letter-spacing: -1.2px;
   text-align: center;
 }
 
-#about, #design, #tech, #writing, #music {
+#about, #design, #tech, #writing, #music, #deodar {
   text-align: center;
   padding-top: 7%;
 }
@@ -285,6 +285,24 @@ p.column {
   margin: 0;
   padding-top: 7%;
   height: 120vh;
+}
+
+#deodar_list ul {
+  text-align: left;
+}
+
+#deodar_list li {
+  margin-left: 15%;
+  text-align: left;
+  list-style-type: square;
+  display: list-item;
+  list-style-position: inside;
+  font-size: 18px;
+}
+
+#deodar p {
+  text-align: center;
+  font-size: 18px;
 }
 
 @media screen and (max-width: 600px) {
