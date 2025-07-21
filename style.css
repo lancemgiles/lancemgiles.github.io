@@ -118,7 +118,7 @@ h1, h2, h3 {
   text-align: center;
 }
 
-#about, #design, #tech, #writing, #music, #deodar {
+#about, #design, #electronics, #software, #writing, #music, #deodar {
   text-align: center;
   padding-top: 7%;
 }
@@ -133,7 +133,7 @@ h1, h2, h3 {
   max-width: 30%;
 }
 
-#design p, #tech p, #writing p, #music p  {
+#design p, #electronics p, #software p, #writing p, #music p  {
   text-align: justify;
   padding-left: 15%;
   padding-right: 15%;
@@ -347,7 +347,7 @@ p.column {
     flex: auto;
   }
 
-  #about, #design, #tech, #writing, #music {
+  #about, #design, #electronics, #software, #writing, #music {
     width: 80%;
     padding: 15% 10% 0;
   }
@@ -357,7 +357,7 @@ p.column {
     padding: 25% 10% 5%;
   }
 
-  #design p, #tech p, #writing p {
+  #design p, #electronics p, #software p, #writing p {
     min-width: 80%;
     font-size: 16px;
     text-align: left;
