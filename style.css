@@ -7,13 +7,13 @@
 
 :root {
   --text: #0D1821;
-  --bodyLink: #AD7A03;
+  --bodyLink: #603cff;
   --bg: #88D498;
   --nav: #114B5F;
   --navLink: #F0F4EF;
   --line: #0D1821;
   --special: #C6DABF;
-  --alt: #1A936F;
+  --alt: #1a9393;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -84,8 +84,12 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   gap: 5%;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.col {
+  flex: 1;
 }
 
 section a {
